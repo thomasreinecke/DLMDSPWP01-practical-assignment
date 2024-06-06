@@ -1,0 +1,18 @@
+
+#
+# Write the Git-commands necessary to clone the develop branch to your local PC. Imagine that you have
+# added a new function. Write all necessary Git-commands to introduce this project to the teams develop Branch.
+#
+
+git clone -b develop git@github.com:thomasreinecke/DLMDSPWP01-practical-assignment-code.git
+cd DLMDSPWP01-practical-assignment-code.git
+
+git checkout -b feature/cool-new-function
+
+# write new code, save files
+
+git add .
+git commit -m "Added cool new function to find the world formula"
+
+git push origin feature/cool-new-function
+
